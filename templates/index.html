@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Anilist Stuffs :></title>
+<head>
+    <link type="text/css" href="/assets/css/main.css" rel="stylesheet">
+</head>
+    <body>
+        <div class="card" style="--background: #7f5af0; --text: white">
+            <div class="container">
+                <form action="/id" method="post">
+                    <div class="form-title">Anime Search by ID</div>
+                    <input type="text" placeholder="ID to search" name="id" autocomplete="off">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="--background: #2cb67d; --text: white">
+            <div class="container">
+                <form action="/name" method="post">
+                    <div class="form-title">Anime Search by Name</div>
+                    <input type="text" placeholder="Name to Search" name="name" autocomplete="off">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="--background: #ff8e3c; --text: white">
+            <div class="container">
+                <form action="/addname" method="post">
+                    <div class="inputs">
+                        <div class="form-title">Anime Add by Name (idk yet)</div>
+                        <input type="text" placeholder="ID to Add" name="addname" autocomplete="off">
+                        <button type="submit">Submit</button>
+                    </form></div>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="--background: #ae27ff; --text: white">
+            <div class="container">
+                <form action="/auth" method="post">
+                    <div class="form-title">Auth me to use your account to add</div>
+                    <a href='https://anilist.co/api/v2/oauth/authorize?client_id=9658&redirect_uri=https://anilist.co/api/v2/oauth/pin&response_type=code'>Generate Auth code</a>
+                    <input type="text" placeholder="Username" name="userName" autocomplete="off">
+                    <input type="text" placeholder="Auth code" name="auth" autocomplete="off">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+</body>
